@@ -1,0 +1,90 @@
+    /* Configuração Geral */
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;    
+    }
+
+    body {
+        
+        font-family: 'Quicksand', sans-serif !important;
+    }
+
+    .row {
+        text-align: center; /* Centraliza todos os textos dentro da row */
+    }
+
+    h1, h2 {
+        color: white;
+        font-family: 'Quicksand', sans-serif !important;
+
+    }
+
+    /************ Navbar ********/
+    .navbar {
+        height: 65px;
+    }
+    /************ ***** ***********/
+
+    /**** Conteúdo Inicial ********/
+
+    .home {
+        width: 100%;
+        background-image: url('../images/img1.jpg');
+        margin-top: 65px;
+        color: white;
+    }
+
+    .home > div{
+        background-color: rgba(0, 0, 0, 0.9);
+        padding-bottom: 50px;
+        padding-top: 90px;
+    }
+     /************ ***** ***********/
+
+     /********** Carousel **********/
+
+     .img-carousel{
+        height: 350px;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .carousel-background {
+        background: fixed;
+        background-repeat: round;
+    }
+
+    .carousel-opacity {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+      /************ ***** ***********/
+    
+     /********* Footer **************/
+    .footer {
+        background-color: black;
+        color: white; 
+    }
+
+    .icons-whatsapp:hover {
+        color: green;
+    }
+
+    .icons-instagram:hover {
+        color: red;
+    }
+     /************ ***** ***********/
+
+    .btn-whatsapp {
+        color: white;
+    }
+    /******** Mapa de localização *********/
+    .map {
+        background-color: rgb(236, 229, 229);
+    }
+    .map > div > h2 {
+        color: black;
+    }
+    /************ ***** ***********/
