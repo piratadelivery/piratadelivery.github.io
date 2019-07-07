@@ -40,6 +40,10 @@
         padding-bottom: 50px;
         padding-top: 90px;
     }
+
+    .btn-whatsapp {
+        color: white;
+    }
      /************ ***** ***********/
 
      /********** Carousel **********/
@@ -75,11 +79,19 @@
     .icons-instagram:hover {
         color: red;
     }
+
+    .developed {
+        border-top: 1px solid rgb(197, 195, 195);
+    }
+    .developed > div > h6 > a > i {
+        color: green;
+    }
+    .developed > div > h6 > a:hover {
+        color: green;
+    }
      /************ ***** ***********/
 
-    .btn-whatsapp {
-        color: white;
-    }
+   
     /******** Mapa de localização *********/
     .map {
         background-color: rgb(236, 229, 229);
