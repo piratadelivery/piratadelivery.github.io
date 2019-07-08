@@ -37,6 +37,10 @@
         
     }
 
+    .home-buttons {
+        padding-top: 10px;
+    }
+
     .btn-whatsapp {
         color: white;
     }
@@ -108,7 +112,7 @@
         background-image: url('../images/img1.jpg');
     }
 
-    .cardapio-padding > .container > h1, .lines > h3  {
+    .cardapio-padding > .container > h2, .lines > h3  {
         font-family: 'Great Vibes', cursive;
 
     }
@@ -137,7 +141,7 @@
 
     }
 
-    .cardapio-padding > .container > h1 {
+    .cardapio-padding > .container > h2 {
         text-align: center;
     }
 
