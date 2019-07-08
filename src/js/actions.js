@@ -11,7 +11,7 @@ $(document).ready(function () {
     setImage(img)
   })
 
-   copiarNumero = () => {
+  copiarNumero = () => {
     //O texto que será copiado
     const number = "87988736975";
     //Cria um elemento input (pode ser um textarea)
@@ -26,26 +26,53 @@ $(document).ready(function () {
     document.execCommand('copy');
     //remove o elemento
     document.body.removeChild(inputNumber);
-   
-    
-    if($('#btn-ligar').hasClass('clicado')) {
+
+
+    if ($('#btn-ligar').hasClass('clicado')) {
       $('#btn-ligar').removeClass('clicado');
     } else {
       $('#btn-ligar').addClass('clicado')
     }
-    if($('#btn-ligar').hasClass('clicado')) {
+    if ($('#btn-ligar').hasClass('clicado')) {
 
-       $('#btn-ligar')
+      $('#btn-ligar')
         .removeClass('btn-primary')
         .addClass('btn-outline-primary')
-        .text('Número copiado para área de transferencia') 
-      } else { 
+        .text('Número copiado para área de transferencia')
+    } else {
 
-        $('#btn-ligar')
-          .removeClass('btn-outline-primary')
-          .addClass('btn-primary')
-          .text('(87) 9 8877-6655');
+      $('#btn-ligar')
+        .removeClass('btn-outline-primary')
+        .addClass('btn-primary')
+        .text('(87) 9 8877-6655');
     }
-};
+  };
+
+  let itensCardapio =
+    [
+      { product: 'x-pirata', price: '9,99' },
+      { product: 'x-calabresa', price: '7,99' },
+      { product: 'x-tudo', price: '7,99' },
+      { product: 'x-burger', price: '5,99' },
+      { product: 'x-milho', price: '5,99' },
+      { product: 'x-salada', price: '5,99' },
+      { product: 'x-mega', price: '13,99' },
+      { product: 'x-bacon', price: '7,99' },
+      { product: 'x-eggs', price: '6,99' },
+      { product: 'eggs', price: '5,99' },
+      { product: 'misto', price: '3,00' },
+      { product: 'americano', price: '6,99' },
+      { product: 'hamburger', price: '3,00' }
+    ];
+  for (let i = 0; i < itensCardapio.length; i++) {
+
+    $('.get-lines')[0].innerHTML +=
+      `<div class="lines">
+                        <h3 class="">${itensCardapio[i]['product']} - 
+                           R$ ${itensCardapio[i]['price']}
+                        </h3>
+                    </div>`;
+
+  }
 
 });
